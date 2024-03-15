@@ -1,0 +1,15 @@
+INDEX VERSION 1.134
+C:\Users\sujal\OneDrive\Desktop\servlet\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\321531597.index
+\ServletProject2\src\main\resources
+C:\Users\sujal\OneDrive\Desktop\servlet\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\746785356.index
+\Calculator\src\main\resources
+C:\Users\sujal\OneDrive\Desktop\servlet\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2606473560.index
+\ServletJdbc\src\main\resources
+C:\Users\sujal\OneDrive\Desktop\servlet\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2092054920.index
+\ServletProject_Calculator\src\main\resources
+C:\Users\sujal\OneDrive\Desktop\servlet\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4130142451.index
+\ServletProject_Calculator\src\main\java
+C:\Users\sujal\OneDrive\Desktop\servlet\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1085306185.index
+\ServletProject1\src\main\resources
+C:\Users\sujal\OneDrive\Desktop\servlet\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\840594513.index
+\CalculatorServlet\src\main\resources

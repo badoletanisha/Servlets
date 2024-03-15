@@ -1,0 +1,53 @@
+package com.servlet.jdbc;
+
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class AddMobile extends HttpServlet{
+
+	@Override
+	public void service(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		int id =Integer.parseInt(req.getParameter("mobileId"));
+	     String model =req.getParameter("mobile_model");
+	     String brand =req.getParameter("mobile_brand");
+	     String price =req.getParameter("mobile_price");
+	     
+	     
+	    
+	     String sql = "Insert into servletjdbcdb.mobile Values(?,?,?,?)"	;
+	     
+	     
+	    
+			try {
+				Class.forName("com.mysql.cj.jdbc.Driver");
+				Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306?user=root&password=root");
+				PreparedStatement p = con.prepareStatement(sql);
+				p.setInt(1, id);
+				p.setString(2, model);
+				p.setString(3, brand);
+				p.setString( 4, price);
+				p.executeUpdate();
+				con.close();
+			} catch (ClassNotFoundException | SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+		
+			
+		}
+	     
+	   
+	}
+	
+
+

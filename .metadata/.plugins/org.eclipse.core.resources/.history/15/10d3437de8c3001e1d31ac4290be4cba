@@ -1,0 +1,34 @@
+package com.servlet.jdbc;
+
+
+
+import com.mysql.cj.xdevapi.Statement;
+
+
+
+public class DisplayAllMobile extends HttpServlet {
+	@Override
+	
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		 String url="jdbc:mysql://localhost:3306/mobiledb";
+		 String user="root";
+		 String pwd="root";
+         String query="select * from Mobile";
+         ResultSet resultSet=null;
+         try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection con=DriverManager.getConnection(url,user,pwd);
+			Statement statement = con.createStatement();
+		    resultSet = statement.executeQuery(query);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		req.setAttribute("mobList", resultSet);
+		RequestDispatcher rd=req.getRequestDispatcher("DisplayMobile.jsp");
+		rd.forward(req, resp);
+	}
+
+}
+	
+
+

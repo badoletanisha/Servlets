@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\sujal\OneDrive\Desktop\servlet\ServletProject2"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="internal"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="com.servlet.ServletJdbc"/>
+			<item value="com.servlet.CalculatorServlet"/>
+			<item value="com.servlet.Calculator"/>
+			<item value="com.servlet.C"/>
+			<item value="com.servlet.servletproject_calculator"/>
+			<item value="com.servlet.bookservlet"/>
+			<item value="com.jsp.servlet.ServletProject2"/>
+			<item value="com.jsp.servlet.FirstServletProject"/>
+			<item value="com.jsp.servlet.ServletProject1"/>
+		</list>
+		<list key="groupId">
+			<item value="com.servlet"/>
+			<item value="com..servlet"/>
+			<item value="com.jsp.servlet"/>
+		</list>
+		<list key="artifactId">
+			<item value="ServletJdbc"/>
+			<item value="CalculatorServlet"/>
+			<item value="Calculator"/>
+			<item value="C"/>
+			<item value="ServletProject_Calculator"/>
+			<item value="BookServlet"/>
+			<item value="ServletProject2"/>
+			<item value="FirstServletProject"/>
+			<item value="ServletProject1"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+</section>

@@ -1,0 +1,5 @@
+package com.servlet.bookservlet;
+
+public class Demo extends GenricServlet{
+
+}

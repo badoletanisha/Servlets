@@ -1,0 +1,42 @@
+package com.servlet.jdbc;
+
+
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.mysql.cj.xdevapi.Statement;
+
+public class DisplayAllMobile extends HttpServlet {
+	@Override
+	
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		 String url="jdbc:mysql://localhost:3306/mobiledb";
+		 String user="root";
+		 String pwd="root";
+         String query="select * from Mobile";
+         ResultSet resultSet=null;
+         try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection con=DriverManager.getConnection(url,user,pwd);
+			java.sql.Statement statement = con.createStatement();
+		    resultSet = statement.executeQuery(query);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		req.setAttribute("mobList", resultSet);
+		RequestDispatcher rd=req.getRequestDispatcher("displayAllMobile.jsp");
+		rd.forward(req, resp);
+	}
+
+}
+	
+
+

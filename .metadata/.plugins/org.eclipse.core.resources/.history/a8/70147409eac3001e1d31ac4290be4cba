@@ -1,0 +1,38 @@
+<%@page import="java.io.PrintWriter"%>
+<%@page import="java.sql.ResultSet"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<%
+	ResultSet rs =(ResultSet) request.getAttribute("mobList");
+	%>
+<h2>MOBILE DETAILS</h2>
+	 <table border="3px dotted" cellspacing="10px" colspacing="10px" style="height:300px;width:500px;">
+
+		<tr>
+			<th>mobileId</th>
+			<th>mobile_model</th>
+			<th>mobile_brand</th>
+			<th>mobile_price</th>
+		</tr>
+		<%
+		while(rs.next()){
+		%>
+		<tr>
+			<td><%=rs.getInt("mobileId")%></td>
+			<td><%=rs.getString("mobile_model")%></td>
+			<td><%=rs.getString("mobile_brand")%></td>
+			<td><%=rs.getInt("mobile_price")%></td>
+		    <td><a href="update?mobId=<%=rs.getInt("mobile_price")%>">Update</a></td>
+		<td><a href="delete?mobId=<%=rs.getInt("mobile_price")%>">Delete</a></td>
+		</tr>
+		<%}%>
+	</table>
+</body>
+</html>
